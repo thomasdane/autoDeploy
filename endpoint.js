@@ -4,9 +4,9 @@ var express = require('express'),
 
 app.set('port', process.env.PORT || 8080);
 
-app.post('/backup/', function (req, res) {  
+app.post('/deploy/', function (req, res) {  
     var spawn = require('child_process').spawn,
-    deploy = spawn('sh', [ './backup.sh' ]);
+    deploy = spawn('sh', [ './deploy.sh' ]);
 
     deploy.stdout.on('data', function (data) {
         console.log(''+data);
