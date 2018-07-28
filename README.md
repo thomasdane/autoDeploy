@@ -12,8 +12,8 @@ Enable automatic deployment on EC2 when merge to master on GitHub.
 
 ## How does it work?
 
-- When you merge to master, GitHub will send JSON to your instance
-- Requests to `:9000/deploy` will run app.js, which calls deploy.sh
+- When you merge to master, GitHub will send JSON request to `https://yourInstance.com:9000/deploy/`
+- This will run app.js, which calls deploy.sh
 - This will cd into your application directory, and do a `git pull origin master`
 
 ## Things to note
