@@ -1,7 +1,7 @@
 # autoDeploy
 Enable automatic deployment on EC2 when merge to master on GitHub
 
-##Getting Started
+## Getting Started
 
 - SSH into your EC2 instance and install node and git.
 - Clone this repo into a directory at the same level as your app. 
